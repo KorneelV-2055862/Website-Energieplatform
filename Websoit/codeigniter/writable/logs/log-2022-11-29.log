@@ -1,0 +1,226 @@
+ERROR - 2022-11-29 07:02:26 --> Error connecting to the database: mysqli_sql_exception: No such file or directory in /app/system/Database/MySQLi/Connection.php:171
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(171): mysqli->real_connect()
+#1 /app/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#2 /app/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#3 /app/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#5 /app/system/Validation/Validation.php(315): CodeIgniter\Validation\Rules->is_unique()
+#6 /app/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+#7 /app/system/Controller.php(140): CodeIgniter\Validation\Validation->run()
+#8 /app/app/Controllers/Users.php(62): CodeIgniter\Controller->validate()
+#9 /app/system/CodeIgniter.php(927): App\Controllers\Users->register()
+#10 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#11 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#12 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No such file or directory in /app/system/Database/MySQLi/Connection.php:215
+Stack trace:
+#0 /app/system/Database/BaseConnection.php(382): CodeIgniter\Database\MySQLi\Connection->connect()
+#1 /app/system/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+#2 /app/system/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+#3 /app/system/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+#4 /app/system/Validation/Validation.php(315): CodeIgniter\Validation\Rules->is_unique()
+#5 /app/system/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+#6 /app/system/Controller.php(140): CodeIgniter\Validation\Validation->run()
+#7 /app/app/Controllers/Users.php(62): CodeIgniter\Controller->validate()
+#8 /app/system/CodeIgniter.php(927): App\Controllers\Users->register()
+#9 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#10 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#11 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#12 {main}
+CRITICAL - 2022-11-29 07:02:26 --> Unable to connect to the database.
+Main connection [MySQLi]: No such file or directory
+in SYSTEMPATH/Database/BaseConnection.php on line 418.
+ 1 SYSTEMPATH/Database/BaseConnection.php(561): CodeIgniter\Database\BaseConnection->initialize()
+ 2 SYSTEMPATH/Database/BaseBuilder.php(1585): CodeIgniter\Database\BaseConnection->query()
+ 3 SYSTEMPATH/Validation/Rules.php(142): CodeIgniter\Database\BaseBuilder->get()
+ 4 SYSTEMPATH/Validation/Validation.php(315): CodeIgniter\Validation\Rules->is_unique()
+ 5 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+ 6 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 7 APPPATH/Controllers/Users.php(62): CodeIgniter\Controller->validate()
+ 8 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Users->register()
+ 9 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+10 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+11 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 07:12:46 --> Undefined array key "password"
+in APPPATH/Validation/UserRules.php on line 16.
+ 1 APPPATH/Validation/UserRules.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Validation/Validation.php(315): App\Validation\UserRules->validateUser()
+ 3 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+ 4 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 5 APPPATH/Controllers/Users.php(24): CodeIgniter\Controller->validate()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Users->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 07:13:39 --> Undefined array key "password"
+in APPPATH/Validation/UserRules.php on line 16.
+ 1 APPPATH/Validation/UserRules.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Validation/Validation.php(315): App\Validation\UserRules->validateUser()
+ 3 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+ 4 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 5 APPPATH/Controllers/Users.php(24): CodeIgniter\Controller->validate()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Users->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 07:13:46 --> Undefined array key "password"
+in APPPATH/Validation/UserRules.php on line 16.
+ 1 APPPATH/Validation/UserRules.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Validation/Validation.php(315): App\Validation\UserRules->validateUser()
+ 3 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+ 4 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 5 APPPATH/Controllers/Users.php(24): CodeIgniter\Controller->validate()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Users->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 07:14:33 --> Undefined array key "password"
+in APPPATH/Validation/UserRules.php on line 16.
+ 1 APPPATH/Validation/UserRules.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Validation/Validation.php(315): App\Validation\UserRules->validateUser()
+ 3 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+ 4 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 5 APPPATH/Controllers/Users.php(24): CodeIgniter\Controller->validate()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Users->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 07:18:29 --> Undefined array key "password"
+in APPPATH/Validation/UserRules.php on line 16.
+ 1 APPPATH/Validation/UserRules.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Validation/Validation.php(315): App\Validation\UserRules->validateUser()
+ 3 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+ 4 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 5 APPPATH/Controllers/Users.php(24): CodeIgniter\Controller->validate()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Users->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 07:19:02 --> Undefined array key "password"
+in APPPATH/Validation/UserRules.php on line 16.
+ 1 APPPATH/Validation/UserRules.php(16): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 SYSTEMPATH/Validation/Validation.php(315): App\Validation\UserRules->validateUser()
+ 3 SYSTEMPATH/Validation/Validation.php(175): CodeIgniter\Validation\Validation->processRules()
+ 4 SYSTEMPATH/Controller.php(140): CodeIgniter\Validation\Validation->run()
+ 5 APPPATH/Controllers/Users.php(24): CodeIgniter\Controller->validate()
+ 6 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Users->index()
+ 7 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 8 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 9 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ERROR - 2022-11-29 07:20:40 --> mysqli_sql_exception: Column 'Firstname' cannot be null in /app/system/Database/MySQLi/Connection.php:292
+Stack trace:
+#0 /app/system/Database/MySQLi/Connection.php(292): mysqli->query()
+#1 /app/system/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+#2 /app/system/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+#3 /app/system/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+#4 /app/system/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+#5 /app/system/BaseModel.php(749): CodeIgniter\Model->doInsert()
+#6 /app/system/Model.php(667): CodeIgniter\BaseModel->insert()
+#7 /app/system/BaseModel.php(659): CodeIgniter\Model->insert()
+#8 /app/app/Controllers/Users.php(35): CodeIgniter\BaseModel->save()
+#9 /app/system/CodeIgniter.php(927): App\Controllers\Users->index()
+#10 /app/system/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+#11 /app/system/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+#12 /app/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#13 {main}
+CRITICAL - 2022-11-29 07:20:40 --> Column 'Firstname' cannot be null
+in SYSTEMPATH/Database/MySQLi/Connection.php on line 292.
+ 1 SYSTEMPATH/Database/MySQLi/Connection.php(292): mysqli->query()
+ 2 SYSTEMPATH/Database/BaseConnection.php(666): CodeIgniter\Database\MySQLi\Connection->execute()
+ 3 SYSTEMPATH/Database/BaseConnection.php(593): CodeIgniter\Database\BaseConnection->simpleQuery()
+ 4 SYSTEMPATH/Database/BaseBuilder.php(1916): CodeIgniter\Database\BaseConnection->query()
+ 5 SYSTEMPATH/Model.php(279): CodeIgniter\Database\BaseBuilder->insert()
+ 6 SYSTEMPATH/BaseModel.php(749): CodeIgniter\Model->doInsert()
+ 7 SYSTEMPATH/Model.php(667): CodeIgniter\BaseModel->insert()
+ 8 SYSTEMPATH/BaseModel.php(659): CodeIgniter\Model->insert()
+ 9 APPPATH/Controllers/Users.php(35): CodeIgniter\BaseModel->save()
+10 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Users->index()
+11 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+12 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+13 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 07:28:20 --> Undefined array key "id"
+in APPPATH/Controllers/Users.php on line 45.
+ 1 APPPATH/Controllers/Users.php(45): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Users.php(32): App\Controllers\Users->setUserMethod()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Users->index()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 07:30:45 --> Undefined array key "id"
+in APPPATH/Controllers/Users.php on line 45.
+ 1 APPPATH/Controllers/Users.php(45): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Users.php(32): App\Controllers\Users->setUserSession()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Users->index()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 07:33:55 --> Undefined array key "id"
+in APPPATH/Controllers/Users.php on line 45.
+ 1 APPPATH/Controllers/Users.php(45): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Users.php(32): App\Controllers\Users->setUserSession()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Users->index()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 07:36:19 --> Undefined array key "id"
+in APPPATH/Controllers/Users.php on line 45.
+ 1 APPPATH/Controllers/Users.php(45): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Users.php(32): App\Controllers\Users->setUserSession()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Users->index()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 07:36:27 --> Undefined array key "id"
+in APPPATH/Controllers/Users.php on line 45.
+ 1 APPPATH/Controllers/Users.php(45): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Users.php(32): App\Controllers\Users->setUserSession()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Users->index()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 07:37:13 --> Undefined array key "firstname"
+in APPPATH/Controllers/Users.php on line 46.
+ 1 APPPATH/Controllers/Users.php(46): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Users.php(32): App\Controllers\Users->setUserSession()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Users->index()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 07:37:30 --> Undefined array key "lastname"
+in APPPATH/Controllers/Users.php on line 47.
+ 1 APPPATH/Controllers/Users.php(47): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Controllers/Users.php(32): App\Controllers\Users->setUserSession()
+ 3 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Users->index()
+ 4 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 07:45:16 --> syntax error, unexpected end of file
+in APPPATH/Views/templates/header.php on line 42.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Dashboard.php(11): view()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Dashboard->index()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 07:46:03 --> syntax error, unexpected end of file
+in APPPATH/Views/templates/header.php on line 42.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Users.php(38): view()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Users->index()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2022-11-29 07:46:08 --> syntax error, unexpected end of file
+in APPPATH/Views/templates/header.php on line 42.
+ 1 SYSTEMPATH/View/View.php(216): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH/Common.php(1134): CodeIgniter\View\View->render()
+ 3 APPPATH/Controllers/Users.php(38): view()
+ 4 SYSTEMPATH/CodeIgniter.php(927): App\Controllers\Users->index()
+ 5 SYSTEMPATH/CodeIgniter.php(482): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(351): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
